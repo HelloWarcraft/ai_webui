@@ -61,7 +61,7 @@ def launch_webui(yaml_file, device_ids=None, **kwargs):
         if tts_args.get('switch'):
             tts_tab(tts_args, ai_handler)
 
-    web.queue().launch(server_name=args["server_name"], server_port=args["server_port"])
+    web.queue().launch(share=True)
 
 
 def parse_opt():
